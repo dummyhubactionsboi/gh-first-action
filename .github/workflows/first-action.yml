@@ -1,0 +1,14 @@
+name: First workflow
+
+on: 
+  workflow_dispatch
+
+jobs:
+  first-job:
+    runs-on: debian
+    steps:
+      - name: print greeting
+        run: echo "Hello world!"
+      - name: print goodbye
+        run: echo "Done - bye!"
+    
